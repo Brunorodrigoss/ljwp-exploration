@@ -1,0 +1,9 @@
+services:
+  openjdk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    entrypoint: ["/bin/bash"]
+    volumes:
+      - .:/app
